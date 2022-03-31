@@ -1,0 +1,7 @@
+<%= form_with(model: @list) do |form| %>
+
+  <div class="d-flex">
+    <%= form.text_field :description, class: "form-control me-2" %> 
+    <%= form.submit "Add TODO item", class: "btn btn-outline-success " %>
+  </div>
+<% end %>
